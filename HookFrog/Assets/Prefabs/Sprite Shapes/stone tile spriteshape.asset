@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+  m_Name: stone tile spriteshape
+  m_EditorClassIdentifier: 
+  m_Angles:
+  - m_Start: -45
+    m_End: 45
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 4b39b91345ffb49b694fb4c0bb095692, type: 3}
+  - m_Start: 45
+    m_End: 135
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 0714a5674e97b42628bdf45c438794fc, type: 3}
+  - m_Start: -224
+    m_End: -134
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 38549122e0a064111908a3977b805ddc, type: 3}
+  - m_Start: -134
+    m_End: -45
+    m_Order: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: bbee7413f700340458602dea599de2a0, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 155bd573a5e4f49e89884e57b207cead, type: 3}
+  m_CornerSprites:
+  - m_CornerType: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 277de4305a0784d2daae6cba4b167d29, type: 3}
+  - m_CornerType: 1
+    m_Sprites:
+    - {fileID: 21300000, guid: b140eb3f7e0d145708cbafba2076c8a4, type: 3}
+  - m_CornerType: 2
+    m_Sprites:
+    - {fileID: 21300000, guid: bdafa1ee13fbf4298a8806f8061c887f, type: 3}
+  - m_CornerType: 3
+    m_Sprites:
+    - {fileID: 21300000, guid: ae802a68c4f2b44f89fa07a76c52bf35, type: 3}
+  - m_CornerType: 4
+    m_Sprites:
+    - {fileID: 21300000, guid: 277de4305a0784d2daae6cba4b167d29, type: 3}
+  - m_CornerType: 5
+    m_Sprites:
+    - {fileID: 21300000, guid: b140eb3f7e0d145708cbafba2076c8a4, type: 3}
+  - m_CornerType: 6
+    m_Sprites:
+    - {fileID: 21300000, guid: bdafa1ee13fbf4298a8806f8061c887f, type: 3}
+  - m_CornerType: 7
+    m_Sprites:
+    - {fileID: 21300000, guid: ae802a68c4f2b44f89fa07a76c52bf35, type: 3}
+  m_FillPixelPerUnit: 100
+  m_BevelSize: 0
+  m_BevelCutoff: 0
+  m_FillOffset: 0
+  m_WorldSpaceUV: 0
+  m_UseSpriteBorders: 1

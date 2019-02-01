@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1232316824675552}
+  m_IsPrefabAsset: 1
+--- !u!1 &1232316824675552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4478835728639684}
+  - component: {fileID: 114382236625821158}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4478835728639684
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232316824675552}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.384823, y: 2.0995712, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114382236625821158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232316824675552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fcc9b6f03d514e649d9bc1ebca35dd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalVolume: 0
+  isMute: 0
+  bgMusic:
+    name: bg
+    clip: {fileID: 8300000, guid: 5988469df60895841a744d46ea5e7dc4, type: 3}
+    volume: 0.75
+    loop: 1
+    source: {fileID: 0}
+  sounds:
+  - name: bg
+    clip: {fileID: 8300000, guid: 5988469df60895841a744d46ea5e7dc4, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: hook
+    clip: {fileID: 8300000, guid: fd1a7be0496a24506bc4e56bb7d92bd3, type: 3}
+    volume: 0.4
+    loop: 0
+    source: {fileID: 0}
+  - name: collectible
+    clip: {fileID: 8300000, guid: fc34f6688b8df4a6f93a273ee71717cd, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: lose
+    clip: {fileID: 8300000, guid: ad8f7a523cca240b89cee5e6fbf2a275, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: warning
+    clip: {fileID: 8300000, guid: 643534fa544cf4ebfb4491573b277e39, type: 3}
+    volume: 0.252
+    loop: 0
+    source: {fileID: 0}
+  - name: laser
+    clip: {fileID: 8300000, guid: b269b83ed7b0c48b28c40e496288a078, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}

@@ -1,0 +1,16 @@
+<!-- partials/head.ejs -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            <% if(locals.title){ %>
+                <%= title %>
+            <% }else{ %>
+                Analytics Dashboard
+            <% } %>
+        </title>
+        <!-- Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <!-- Bulma Framework -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+</head>

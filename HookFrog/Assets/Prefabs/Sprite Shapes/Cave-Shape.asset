@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
+  m_Name: Cave-Shape
+  m_EditorClassIdentifier: 
+  m_Angles:
+  - m_Start: 45
+    m_End: 135
+    m_Order: 4
+    m_Sprites:
+    - {fileID: 21300000, guid: aed69fc5694c74641a9229d358aac60e, type: 3}
+  - m_Start: 135
+    m_End: 225
+    m_Order: 8
+    m_Sprites:
+    - {fileID: 21300000, guid: 8a99b2c9eea5341eca58ad1ee26b75f3, type: 3}
+  - m_Start: -135
+    m_End: -45
+    m_Order: 3
+    m_Sprites:
+    - {fileID: 21300000, guid: b978293314f2347f7b8538f1a2acb522, type: 3}
+  - m_Start: -45
+    m_End: 45
+    m_Order: 5
+    m_Sprites:
+    - {fileID: 21300000, guid: 381514b2b020b44b49f54192e0e700a1, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 7c75a42fad6a0409d8cc889f6a5d475c, type: 3}
+  m_CornerSprites:
+  - m_CornerType: 0
+    m_Sprites:
+    - {fileID: 21300000, guid: 6f64b617cb93f4939a8f606e0c30af7d, type: 3}
+  - m_CornerType: 1
+    m_Sprites:
+    - {fileID: 21300000, guid: f98dbaf7c34dc432093707ce9d2ac1e5, type: 3}
+  - m_CornerType: 2
+    m_Sprites:
+    - {fileID: 21300000, guid: 7ac75b6866d044345ac4e0994e6b0032, type: 3}
+  - m_CornerType: 3
+    m_Sprites:
+    - {fileID: 21300000, guid: 3fe217181c92a4ded9a2c38c4323a06a, type: 3}
+  - m_CornerType: 4
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 5
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 6
+    m_Sprites:
+    - {fileID: 0}
+  - m_CornerType: 7
+    m_Sprites:
+    - {fileID: 0}
+  m_FillPixelPerUnit: 10
+  m_BevelSize: 0
+  m_BevelCutoff: 0
+  m_FillOffset: 0
+  m_WorldSpaceUV: 0
+  m_UseSpriteBorders: 1

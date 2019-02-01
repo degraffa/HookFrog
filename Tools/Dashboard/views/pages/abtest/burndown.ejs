@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <% include ../../partials/head %>
+  <body class = "container">
+    <canvas id="chart"></canvas>
+
+    <script>
+      function buildChart(ctx, json){
+        const datasetA = json
+            .filter(data => data.abvalue == 1)
+        const datasetB = json
+            .filter(data => data.abvalue == 2)
+        
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: datasetA
+                .map(data => data.level_id), 
+              datasets: [{
+                label: "% of players completed (abvalue = 1)",
+                data: datasetA
+                    .map(data => (data.count / datasetA[0].count) * 100),
+                backgroundColor: "rgb(255, 99, 132)"
+              },
+              {
+                label: "% of players completed (abvalue = 2)",
+                data: datasetB
+                    .map(data => (data.count / datasetB[0].count) * 100),
+                backgroundColor: "rgb(54, 162, 235)"
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Burndown Chart By Level (AB Test)',
+                fontSize: '24',
+              },
+              legend: {
+                display: false,
+              },
+              scales: {
+                xAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "Level Identifier"
+                  },
+                }],
+                yAxes: [{
+                  scaleLabel: {
+                    display: true,
+                    labelString: "% of Unique Players"
+                  },
+                }]
+              }
+            }
+        });
+      }
+
+    // Define a plugin to provide data labels
+    Chart.plugins.register({
+        afterDatasetsDraw: function(chart) {
+            const ctx = chart.ctx;
+            console.log(chart)
+            chart.data.datasets.forEach(function(dataset, i) {
+                const meta = chart.getDatasetMeta(i);
+                if (!meta.hidden) {
+                    meta.data.forEach(function(element, index) {
+                        // Draw the text in black, with the specified font
+                        ctx.fillStyle = 'rgb(0, 0, 0)';
+
+                        const fontSize = 16;
+                        const fontStyle = 'normal';
+                        const fontFamily = 'Sans Serif';
+                        ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+
+                        // Just naively convert to string for now
+                        const dataString = Math.round(dataset.data[index]).toString() + "%";
+
+                        // Make sure alignment settings are correct
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+
+                        const padding = 5;
+                        const position = element.tooltipPosition();
+                        ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding);
+                    });
+                }
+            });
+        }
+    });
+      
+      const ctx = document.getElementById('chart').getContext('2d'); 
+      
+      fetch('../api/ab/burndown')
+        .then(resp => resp.json())
+        .then(json => buildChart(ctx, json));
+      
+    </script>
+  </body>
+</html>

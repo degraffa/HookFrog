@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>2,1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="forest-background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-3" transform="translate(-600.000000, -640.000000)">
+            <g id="new-tile" transform="translate(600.000000, 600.000000)">
+                <g id="2,1" transform="translate(0.000000, 40.000000)">
+                    <rect fill="#404040" x="0" y="0" width="20" height="20"></rect>
+                    <path d="M13.354482,17.1361296 C15.2785708,17.1361296 15.6054345,15.62037 15.6054345,14.6361296 C15.6054345,13.6518893 15.2785708,12.1361296 13.354482,12.1361296 C11.4303932,12.1361296 9.60543453,14.3697645 9.60543453,15.3540048 C9.60543453,16.3382452 11.4303932,17.1361296 13.354482,17.1361296 Z" id="Oval-5" fill="#767D81"></path>
+                    <path d="M7.07132893,13.0933531 C12.6822685,13.0933531 13.3306701,4.7555434 13.3306701,3.80712453 C13.3306701,2.85870566 11.2795336,0.880078592 5.66859403,3.68425895 C0.0576544441,6.48843931 1.46038934,13.0933531 7.07132893,13.0933531 Z" id="Oval-3" fill="#75797B" transform="translate(7.713672, 7.666883) rotate(35.000000) translate(-7.713672, -7.666883) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
